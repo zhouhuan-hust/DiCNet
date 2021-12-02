@@ -1,2 +1,2 @@
-# Anomaly Discovery in Semantic Segmentationvia Distillation Comparison Networks
+# Anomaly Discovery in Semantic Segmentation via Distillation Comparison Networks
 
