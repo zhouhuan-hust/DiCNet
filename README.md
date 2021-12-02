@@ -1,2 +1,2 @@
-# DiCNet
-Anomaly Discovery in Semantic Segmentationvia Distillation Comparison Networks
+# Anomaly Discovery in Semantic Segmentationvia Distillation Comparison Networks
+
