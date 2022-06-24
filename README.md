@@ -13,8 +13,13 @@ conda create -n dicnet python=3.8
 conda activate dicnet
 ```
 #### Dependencies
+```
 conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia
 pip install opencv-python
+pip install numpy
 pip install tqdm
-pip install pip install matplotlib
+pip install matplotlib
 pip install easydict
+pip install scipy
+pip install scikit-learn
+```
