@@ -28,10 +28,11 @@ pip install scikit-learn
 
 ### Data Preparation
 Download [StreetHazards train](https://people.eecs.berkeley.edu/~hendrycks/streethazards_train.tar), [StreetHazards test](https://people.eecs.berkeley.edu/~hendrycks/streethazards_test.tar)
+Put them in data/
 
 ### Train
 Use [this repository](https://github.com/CSAILVision/semantic-segmentation-pytorch/tree/5c2e9f6f3a231ae9ea150a0019d161fe2896efcf)  to train a pspnet as the teacher network
-
+Train the student network for 
 
 
 
