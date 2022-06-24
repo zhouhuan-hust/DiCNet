@@ -28,11 +28,44 @@ pip install scikit-learn
 
 ### Data Preparation
 Download [StreetHazards train](https://people.eecs.berkeley.edu/~hendrycks/streethazards_train.tar), [StreetHazards test](https://people.eecs.berkeley.edu/~hendrycks/streethazards_test.tar)
-Put them in data/
+<br>Put them in data/
 
 ### Train
 Use [this repository](https://github.com/CSAILVision/semantic-segmentation-pytorch/tree/5c2e9f6f3a231ae9ea150a0019d161fe2896efcf)  to train a pspnet as the teacher network
-Train the student network for 
+ <br>Train the student network
+```
+python train_student.py
+```
+
+### Test
+```
+python evaluation_with_seg.py
+```
+
+### Pretrained Model
+[DiCNet](https://drive.google.com/drive/folders/1H30m7ZeU4JOtjVUUAv5DFn8GGo4rWtrB?usp=sharing)
+
+## Results on StreetHazards dataset
+
+| Method | AUPR(%) | FPR95(%) | AUROC(%) | 
+|---|---|---|---|
+| MSP | 6.6 | 33.7 | 87.7 |
+| Deep Ensemble | 7.2 | 25.4 | 90.0 | 
+| TRADI | 7.2 | 25.3 | 89.2 | 
+| SynthCP |  9.3 | 28.4 | 88.5 | 
+| PAnS |  8.8 | 23.2 | 91.1 | 
+| DiCNet | 16.2 | 17.6 | 93.4 | 
+
+## Citation
+
+If you find this useful in your research, please consider citing:
+
+    @article{zhou2021anomaly,
+      title={Anomaly Discovery in Semantic Segmentation via Distillation Comparison Networks},
+      author={Zhou, Huan and Gong, Shi and Zhou, Yu and Zheng, Zengqiang and Liu, Ronghua and Bai, Xiang},
+      journal={arXiv preprint arXiv:2112.09908},
+      year={2021}
+    }
 
 
 
