@@ -6,3 +6,15 @@ Our key observation is that semantic classification plays a critical role in exi
 ### Environment
 * Python 3.8
 * Pytorch 1.10
+### Install
+#### Create a virtual environment and activate it
+```
+conda create -n dicnet python=3.8
+conda activate dicnet
+```
+#### Dependencies
+conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia
+pip install opencv-python
+pip install tqdm
+pip install pip install matplotlib
+pip install easydict
