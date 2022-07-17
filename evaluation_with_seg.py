@@ -10,7 +10,7 @@ import numpy as np
 import torch.nn as nn
 # Our libs
 from config_student import cfg
-from utils import AverageMeter, setup_logger
+# from utils import AverageMeter, setup_logger
 from optimizers import get_optimizer, LR_Scheduler
 from plot_logger import PlotLogger
 from tqdm import tqdm
