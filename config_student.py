@@ -1,7 +1,7 @@
 from easydict import EasyDict
 
 cfg = EasyDict()
-cfg.DIR = "ckpt/bddresnet34" 
+cfg.DIR = "ckpt/resnet34" 
 cfg.t_arch = "resnet50dilated"
 cfg.teacher_weight = ("./pretrained/encoder.pth", "./pretrained/decoder.pth")
 cfg.student_weight = ("./pretrained/resnet34-imagenet.pth", "./pretrained/resnet18-imagenet.pth", "./pretrained/resnet50-imagenet.pth")
