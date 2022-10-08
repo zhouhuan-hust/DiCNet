@@ -198,7 +198,7 @@ if __name__ == '__main__':
     cfg.DIR = "ckpt/adamshpre34"
     cfg.TRAIN.optimizer = "adam"
     cfg.s_arch = "resnet34dilated"
-    cfg.TRAIN.max_epochs = 200
+    cfg.TRAIN.max_epochs = 150
 
     logger = setup_logger(distributed_rank=0)   # TODO
     logger.info("Running with config:\n{}".format(cfg))
