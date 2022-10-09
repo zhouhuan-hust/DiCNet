@@ -103,18 +103,6 @@ def conmpute_metric(score_map, label_map, mask=None):
     auroc, aupr, fpr, thr = eval_ood_measure(score_map,label_map)
     return {"auroc": auroc, "aupr": aupr, "fpr95": fpr}, thr
 
-def cal_entropy(logits_batch):
-    N, H, W = logits_batch.size(0), logits_batch.size(2), logits_batch.size(3)
-    softmax_batch = nn.functional.softmax(logits_batch/5, dim=1)
-    softmax_batch = softmax_batch.cpu().numpy()
-    entropy_logits = np.zeros((N,H,W))
-    for n in range(N):
-        for h in range(H):
-            for w in range(W):
-                entropy_logits[n,h,w] = sum([-p*math.log(p, 2) for p in softmax_batch[n,:,h,w]])
-
-    return torch.from_numpy(entropy_logits)
-
 class Logger(object):
     def __init__(self, save_dir="eval_dir"):
         self.save_dir = save_dir
