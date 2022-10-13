@@ -43,7 +43,7 @@ python evaluation_with_seg.py
 ```
 
 ### Pretrained Model
-[DrCNet](https://drive.google.com/drive/folders/1H30m7ZeU4JOtjVUUAv5DFn8GGo4rWtrB?usp=sharing)
+[DiCNet](https://drive.google.com/drive/folders/1H30m7ZeU4JOtjVUUAv5DFn8GGo4rWtrB?usp=sharing)
 
 ## Results on StreetHazards dataset
 
