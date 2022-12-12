@@ -1,4 +1,4 @@
-# DiCNet
+<!--# DiCNet
 This repository provides the PyTorch implementation of the paper: [Anomaly Discovery in Semantic Segmentation via Distillation Comparison Networks](https://arxiv.org/abs/2112.09908)
 
 ## Introduction
@@ -67,8 +67,7 @@ If you find this useful in your research, please consider citing:
       year={2021}
     }
 
-
-
+-->
 
 
 
